@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+        /* Font size */
+        --font-size-s: 0.9rem;
+        --font-size-n: 1rem;
+        --font-size-m: 1.12rem;
+        --font-size-l: 1.5rem;
+        --font-size-xl: 3rem;
+        --font-size-xxl: 5rem;
+    
+        /* Font weight */
+        --font-weight-normal: 400;
+        --font-weight-medium: 500;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(images/Background.jpg);
+    background-size: cover;
+}
+
+h1{
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-bold);
+    color: whitesmoke;
+
+}
+
+h2{
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: whitesmoke;
+}
+
+h3{
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-medium);
+    color: whitesmoke;
+}
+
+p{
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-normal);
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 25px 0 25px;
+}
+
+.search-box {
+    width: 60vw;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: whitesmoke;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+input {
+    width: 60vw;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.current {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.weather-image {
+    width: 200px;
+    height: 200px;
+}
+
+.weather-icon {
+    width: 75px;
+    height: 75px;
+}
+
+.weather-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5em;
+    padding-top: 10px;
+}
+    
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+
+@media screen and (max-width:600px) {
+
+    :root {
+        /* Font size */
+        --font-size-s: 0.9rem;
+        --font-size-n: 1rem;
+        --font-size-m: 1.12rem;
+        --font-size-l: 1.5rem;
+        --font-size-xl: 3rem;
+        --font-size-xxl: 5rem;
+    
+        /* Font weight */
+        --font-weight-normal: 400;
+        --font-weight-medium: 500;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+}
+
+
+    h1{
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+        color: whitesmoke;
+    
+    }
+    
+    h2{
+        font-size: var(--font-size-l);
+        font-weight: var(--font-weight-semibold);
+        color: whitesmoke;
+    }
+    
+    h3{
+        font-size: var(--font-size-m);
+        font-weight: var(--font-weight-medium);
+        color: whitesmoke;
+    }
+    
+    p{
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-normal);
+        color: whitesmoke;
+    }
+
+    .search-box {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    :root {
+        /* Font size */
+        --font-size-s: 0.9rem;
+        --font-size-n: 1rem;
+        --font-size-m: 1.12rem;
+        --font-size-l: 1.5rem;
+    
+        /* Font weight */
+        --font-weight-normal: 400;
+        --font-weight-medium: 500;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+}
+
+
+    h1{
+        font-size: var(--font-size-l);
+        font-weight: var(--font-weight-bold);
+        color: whitesmoke;
+    
+    }
+    
+    h2{
+        font-size: var(--font-size-m);
+        font-weight: var(--font-weight-semibold);
+        color: whitesmoke;
+    }
+    
+    h3{
+        font-size: var(--font-size-m);
+        font-weight: var(--font-weight-medium);
+        color: whitesmoke;
+    }
+    
+    p{
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-normal);
+        color: whitesmoke;
+    }
+
+    .container {
+        margin: 0 10px 0 10px;
+    }
+
+    .search-box {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .weather-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .weather-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .details {
+        gap: 1em;
+    }
+
+    .col {
+        gap: 5px;
+    }
+
+    .current {
+        margin-top: 24px;
+    }
+
+}
